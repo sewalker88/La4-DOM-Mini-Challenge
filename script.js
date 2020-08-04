@@ -6,7 +6,7 @@ let total = document.querySelector(".total");
 console.dir(snacks);
 
 snacks.forEach((snack) => {
-  snack.addEventListner("click", () => {
+  snack.addEventListener("click", () => {
     let amount = parseInt(snack.getAttribute("data-amount"));
     currentTotal += amount;
     total.innerText = `TOTAL:$${currentTotal}`;
